@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>N.Thangam-Port folio</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:0;
+            padding:0;
+            background-color:white;
+        }
+        h3{
+            color:black;
+            font-size: 25px;
+        }
+        h2{
+            color:#fd2020;
+            font-size: 30px;
+        }
+        header{
+            background-color: #ffae00;
+            color:white;
+            text-align:center;
+            padding:20 px;
+            position:relative;
+        }
+        .header-content h1{
+            font-size:2.5rem;
+
+        }
+        img{
+            width:250px;
+            height:320px;
+
+        }
+        profile-picture
+        {
+            width:100px;
+            height:100px;
+            border-radius:75%;
+            object-fit:cover;
+            position:absolute;
+            top:75px;
+            left:75px;
+
+        }
+        nav{
+            background-color:black;
+            color:#FFF;
+            text-align:center;
+        }
+        nav ul
+        {
+            list-style-type:none;
+            padding:10px;
+        }
+        nav ul li{
+            display:inline;
+            margin:0 20px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:#FFF;
+
+        }
+        .section-content
+        {
+            bakground-color:#FFF;
+            padding:2 rem;
+            margin:1 rem;
+            border-radius:20px;
+            box-shadow:00 10 px rgba(0,0,0,0.1);
+        }
+        .download-button
+        {
+            background-coor:#333;
+            color:black;
+            padding:0.5 rem 1 rem;
+            text-decoration:none;
+            border-radius:20px;
+            display:inline-block;
+            margin-tp:10px;
+            
+        }
+        .download-button:hover{
+            backgound-color:blue;
+        }
+        footer{
+            text-align:center;
+            padding:1 rem 0;
+            background-color:#333;
+            color:#FFF;
+        }
+        ul{
+            list-style-type:lower-roman;
+            padding-left:20px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="image.jpeg" alt="profile" class="profile-picture">
+                <h1>N.Thangam</h1>
+                <h3><i>Student</i></h3>
+                </div>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#about"><b>ABOUT</b></a></li>
+                        <li><a href="#education"><b>EDUCATION</b></a></li>
+                        <li><a href="#skills"><b>SKILLS</b></a></li>
+                        <li><a href="#projects"><b>PROJECTS</b></a></li>
+                        <li><a href="#resume"><b>RESUME</b></a></li>
+                    </ul>
+                </nav>
+                <section id="about">
+                    <div class="section-content">
+                    <h2><i>About me</i></h2>
+                <p> <b>Welcome to all!</b><br><br> 
+                    I am <b>N.Thangam</b>.<br><br>
+                     I am a <b>BCA </b>student.<br><br>
+                    I studying my final year.<br></p></div>
+                </section>
+                <section id="education">
+                <div class="section-content">
+                    <h2><i>Education</i></h2>
+                    <p><b>UNIVERSITY:</b>Mononmaiam sundaranar university <br><br>
+                    <b>COLLEGE:</b>Govindammal aditanar college for woman<br><br>
+                <b>DEPARTMENT:</b>BCA</p>
+                
+    
+
+                </div></section>
+                <section id="skills">
+                    <div class=""section-content">
+                    <h2><i>Skills</i></h2>
+                <b><ul>
+                    <li>C</li>
+                    <li>PYTHON</li>
+                    <li>HTML</li>
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>PHP</li>
+                    <li>CSS</li>
+                    
+                    </ul></b>
+                </div>
+                </section>
+                <section id="projects">
+                    <div class="section-content">
+                        <h2><i>Projects</i></h2>
+                        <ul>
+                            <li><a href="D:/naanmudalvan/project1.html">Projects1</a></li>                   
+                                     <li><a href="D:/naanmudhalvan/project2.html">Projects2</a></li>
+
+
+
+                        </ul>
+                    </div>
+                </section>
+                <section id="resume">
+                    
+                        <div class="section-content">
+                            <h2><i>Resume</i></h2>
+                            <a href="https://drive.google.com/file/d/10XMhloHtYjcHxL6_5GwajPSpBTuqqFtF/view?usp=drive_link"  class="download-button">Download</a>
+                        </div>
+                    
+
+                </section>
+
+            <footer>
+                <p>&copy;2023 N.Thangam</p>
+            </footer>
+    
+    
+    <script>
+        document.querySelectorAll('a [href^="#"]').
+        forEach(anchor=>
+        {
+            anchor.addEventListener('click',funcion(e)
+            {
+                e.preventDefault();
+                const targetId=this.getAttribute('href').substring(1);
+                const targetElement=document.getElementBYId(targetId);
+                if(targetElement)
+                {
+                    window.scrollTo({top:targetElement.offsetTOP,behaviour:'smooth'});
+                }
+            });
+        });
+
+    </script>
+    </body>
+</html>
